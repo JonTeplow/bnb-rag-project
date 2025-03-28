@@ -1,0 +1,26 @@
+# Ignore virtual environment
+env_rag/
+venv/
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment variables file
+.env
+.streamlit/secrets.toml
+
+# Ignore FAISS indexes stored locally
+vector_store/*.index
+vector_store/*.pkl
+vector_store_final/*.index
+vector_store_final/*.pkl
+temp_faiss.index
+# Ignore AWS credentials (just in case)
+~/.aws/
+
+# Ignore unnecessary logs & temp files
+logs/
+*.log
