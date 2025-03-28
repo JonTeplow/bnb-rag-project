@@ -24,3 +24,5 @@ temp_faiss.index
 # Ignore unnecessary logs & temp files
 logs/
 *.log
+# Ignore data folder and everything inside
+data/
