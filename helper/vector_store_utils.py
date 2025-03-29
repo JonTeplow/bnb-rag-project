@@ -7,12 +7,17 @@ from dotenv import load_dotenv
 import os
 import tempfile
 from langchain_openai import OpenAIEmbeddings
+import streamlit as st
 
 # Load environment variables
 load_dotenv()
-AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
-AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
-S3_BUCKET = os.getenv("S3_BUCKET")
+# AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
+# AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+# S3_BUCKET = os.getenv("S3_BUCKET")
+# Load AWS credentials from Streamlit secrets
+AWS_ACCESS_KEY = st.secrets["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
+S3_BUCKET = st.secrets["S3_BUCKET"]
 
 # Initialize S3 client and embedding model
 s3_client = boto3.client("s3", aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
@@ -29,6 +34,17 @@ METADATA_KEYS = {
     "blog_styles": "vector_store/metadata_blog_styles.pkl",
     "docs": "vector_store/metadata_docs.pkl"
 }
+import os
+
+def debug_faiss_files():
+    vector_store_path = "vector_store/"
+    if os.path.exists(vector_store_path):
+        print("✅ FAISS folder exists")
+        print("📂 Files in vector store:", os.listdir(vector_store_path))
+    else:
+        print("❌ FAISS folder is missing!")
+
+debug_faiss_files()  # Run this in Streamlit to see FAISS files
 def load_text_from_s3(s3_key):
     """Fetch and decode text content from an S3 object (e.g., brand voice, elevator pitch)."""
     try:

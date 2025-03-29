@@ -5,14 +5,20 @@ import pickle
 import boto3
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
+import streamlit as st
+
 
 # Load environment variables
 load_dotenv()
 
 # AWS Configuration
-AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
-AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
-S3_BUCKET_NAME = "bnbcontentstudio"
+# AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
+# AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+# S3_BUCKET_NAME = "bnbcontentstudio"
+# Load AWS credentials from Streamlit secrets
+AWS_ACCESS_KEY = st.secrets["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
+S3_BUCKET = st.secrets["S3_BUCKET"]
 
 # FAISS and Embeddings Configuration
 VECTOR_DB_DIR = "data/vector_store/"

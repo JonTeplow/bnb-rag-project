@@ -6,12 +6,18 @@ import numpy as np
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
 from langchain_openai import OpenAIEmbeddings
+import streamlit as st
 
 # Load environment variables
 load_dotenv()
-S3_BUCKET = os.getenv("S3_BUCKET")
-AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
-AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+# S3_BUCKET = os.getenv("S3_BUCKET")
+# AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
+# AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+
+# Load AWS credentials from Streamlit secrets
+AWS_ACCESS_KEY = st.secrets["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
+S3_BUCKET = st.secrets["S3_BUCKET"]
 
 # Initialize S3 and embedding model
 s3_client = boto3.client("s3", aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
