@@ -13,8 +13,8 @@ __pycache__/
 .streamlit/secrets.toml
 
 # Ignore FAISS indexes stored locally
-vector_store/*.index
-vector_store/*.pkl
+#vector_store/*.index
+#vector_store/*.pkl
 vector_store_final/*.index
 vector_store_final/*.pkl
 temp_faiss.index

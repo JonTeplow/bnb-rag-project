@@ -33,6 +33,8 @@ def search_and_generate_response(user_query, k=5):
     3. Use OpenAI to generate a final response
     """
     indices, metadata = load_all_indices_and_metadata()
+    print("✅ Loaded FAISS Indices:", indices.keys())  # Debugging
+    print("✅ Loaded FAISS Metadata:", metadata.keys())  # Debugging
 
     # Search top-k matches in each index
     our_results = search_faiss_index(user_query, indices["our_blogs"], metadata["our_blogs"], k)
