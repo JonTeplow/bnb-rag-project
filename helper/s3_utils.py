@@ -6,8 +6,8 @@ print("🔍 Checking Streamlit secrets:", dict(st.secrets))  # Debug
 # Initialize S3 client
 s3_client = boto3.client(
     's3',
-    aws_access_key_id=st.secrets("AWS_ACCESS_KEY_ID"),
-    aws_secret_access_key=st.secrets("AWS_SECRET_ACCESS_KEY")
+    aws_access_key_id=st.secrets["AWS_ACCESS_KEY_ID"],  
+    aws_secret_access_key=st.secrets["AWS_SECRET_ACCESS_KEY"]  
 )
 
 def upload_to_s3(file_content, s3_key, bucket_name=os.getenv("S3_BUCKET")):
