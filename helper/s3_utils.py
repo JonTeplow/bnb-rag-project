@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
 import os
 import streamlit as st
-
+print("🔍 Checking Streamlit secrets:", dict(st.secrets))  # Debug
 # Initialize S3 client
 s3_client = boto3.client(
     's3',

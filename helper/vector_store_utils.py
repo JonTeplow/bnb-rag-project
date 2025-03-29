@@ -14,6 +14,7 @@ load_dotenv()
 # AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
 # AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 # S3_BUCKET = os.getenv("S3_BUCKET")
+print("🔍 Checking Streamlit secrets:", dict(st.secrets))  # Debug
 # Load AWS credentials from Streamlit secrets
 AWS_ACCESS_KEY = st.secrets["AWS_ACCESS_KEY_ID"]
 AWS_SECRET_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
