@@ -63,7 +63,17 @@ def search_and_generate_response(user_query, k=5):
     STRUCTURE & TONE
     - Follow the **exact formatting style** of STYLE BLOGS.
     - Start strong. Get to the point immediately—no warmups or vague intros.
-    - Break down ideas into **clean, scannable sections** with clear headers and smooth transitions.
+    - Avoid metaphors, exaggerated analogies, overused marketing phrases.
+    - Start with a strong, clear lead—no snarky intros or vague warmups.
+    - Keep paragraphs tight and to the point.
+    - Avoid sounding like a generic marketing article or AI-generated fluff.
+    - Clear, concise, and impactful. Avoid verbosity and unnecessary length.
+    - No emojis, no casual phrases, and no overly conversational expressions.
+    - No metaphors, no poetic phrasing, no dramatic sign-offs. Stay sharp, practical, and precise.
+    - Avoid casual or overly conversational phrases and AI buzzwords(e.g., “Hey there,” “Catch you on the flip side,” “Let’s face it,” etc.)
+    - Maintain formatting from STYLE BLOGS: headers, bullets, bold sections, and smooth transitions.
+    - Avoid long intros, corporate buzzwords, or exaggerated language.
+    - **Maintain the B2B brand voice—clear, direct, and authoritative.**
     
     STYLE GUIDELINES
     - Tone: use the tone of the STYLE BLOGS **Confident, editorial, and modern**.
