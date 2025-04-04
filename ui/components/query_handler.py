@@ -66,6 +66,8 @@ def search_and_generate_response(user_query, k=5):
     - Write like a professional, not a casual influencer. Tone should be bold and direct—not snarky or overly casual.
     - Absolutely no metaphors, analogies, or overused marketing phrases.
     - No unnecessary fluff, no drawn-out intros—get to the point fast.
+    - **No metaphors, no poetic phrasing, no dramatic sign-offs.** Stay sharp, practical, and precise.
+    - **Avoid casual or overly conversational phrases and AI buzzwords** (e.g., “Hey there,” “Catch you on the flip side,” “Let’s face it,” etc.)
     - Eliminate soft or quirky openers. Get to the point immediately.
     - Each response must begin with a rewritten title that reflects the new style.
     - Maintain formatting from STYLE BLOGS: headers, bullets, bold sections, and smooth transitions.
@@ -79,6 +81,10 @@ def search_and_generate_response(user_query, k=5):
 
     Strictly avoid:
     - Metaphors, fluff, jokes, emojis, or quirky phrases like “Hey there, curious cat!”
+    - Generic marketing tone or buzzwords.
+    - Overly long intros or vague headers like “The Power of...”.
+    - Terms like “in the realm of B2B” or “capturing hearts and minds.”
+    - Paragraphs that sound like TED Talk conclusions.
     - Casual sign-offs like “Catch you on the flip side.”
     - Reusing STYLE BLOG examples unless extremely relevant
     
@@ -111,6 +117,7 @@ def search_and_generate_response(user_query, k=5):
     **Rewrite the response using these strict guidelines:**
     - **Use only the reference content as the factual base.**
     - **STRICTLY mirror the phrasing, tone, and style from STYLE BLOGS.**
+    - **No poetic titles or vague themes** like “The Power of...” or “In the world of B2B...”
     - **Use engaging, structured formatting:**  
     - **Headers, bullet points, and numbered lists** (no huge blocks of text).
     - **Confident, sharp, and clear messaging** (no fluff).  
