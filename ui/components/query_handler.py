@@ -60,14 +60,14 @@ def search_and_generate_response(user_query, k=5):
     
     Your writing MUST follow these updated rules:
     
-    🔹 STRUCTURE & TONE
+    STRUCTURE & TONE
     - Follow the **exact formatting style** of STYLE BLOGS.
     - Start strong. Get to the point immediately—no warmups or vague intros.
     - Break down ideas into **clean, scannable sections** with clear headers and smooth transitions.
     - Each response must begin with a **rewritten, punchy title** that reflects the STYLE blog tone.
     
-    🔹 STYLE GUIDELINES
-    - Tone: **Confident, editorial, and modern**.
+    STYLE GUIDELINES
+    - Tone: use the tone of the STYLE BLOGS **Confident, editorial, and modern**.
     - Avoid verbosity. **Keep it lean and powerful.**
     - Avoid metaphors, poetic phrasing, and TED Talk-style conclusions.
     - No emojis, no casual expressions, no fluff.
@@ -76,12 +76,12 @@ def search_and_generate_response(user_query, k=5):
     - Use crisp bullet points, short paragraphs, and clear logical flow.
     - Absolutely no generic marketing language or buzzwords.
     
-    🔹 EXAMPLES & CONTENT
+    EXAMPLES & CONTENT
     - Use OUR BLOGS as the only factual base.
     - Do NOT reuse specific examples from OUR BLOGS or STYLE BLOGS unless they are **highly relevant** to the user query.
     - Use **case-study thinking** and insight-driven analysis, not copy-paste content.
     
-    🚫 Strictly Avoid:
+    Strictly Avoid:
     - Soft openers or “powerful” phrasing like “The Power of…”, “In the world of…”, “Capturing hearts and minds…”.
     - Dramatic sign-offs like “Catch you on the flip side.”
     - AI-generated filler, quirky expressions, or emotional exaggeration.
@@ -110,6 +110,8 @@ def search_and_generate_response(user_query, k=5):
     **Rewrite the response using these strict guidelines:**
     - **Use only the reference content as the factual base.**
     - **STRICTLY mirror the phrasing, tone, and style from STYLE BLOGS.**
+    - Use **only** the content from OUR BLOGS for factual points.
+    - Match the **phrasing, formatting, and tone** of STYLE BLOGS.
     - **No poetic titles or vague themes** like “The Power of...” or “In the world of B2B...”
     - **Use engaging, structured formatting:**  
     - **Headers, bullet points, and numbered lists** (no huge blocks of text).
@@ -119,12 +121,9 @@ def search_and_generate_response(user_query, k=5):
 
     **Do NOT:**  
     - **- Use vague headers like “The Art of…” or “The Power of…”**
-    - Use **only** the content from OUR BLOGS for factual points.
-    - Match the **phrasing, formatting, and tone** of STYLE BLOGS.
     - Do **not** reuse examples from either OUR or STYLE BLOGS unless highly relevant to the query.
     - Avoid long intros. Lead with value immediately.
     - No metaphors, no soft poetic lines, no quirky intros.
-    - Use **clear, structured formatting** with bold headers, bullet points, and short paragraphs.
     - **Write a corporate-style marketing article.**
     - **Lose the punch and structure of STYLE blogs.**
     - **Write a generic marketing article.**
