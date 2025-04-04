@@ -59,12 +59,16 @@ def search_and_generate_response(user_query, k=5):
     You are tasked with rewriting blogs from OUR BLOGS using the structure, tone, and phrasing of STYLE BLOGS.
 
     Your writing MUST follow these updated rules:
-    - Format like the STYLE blogs.
+    - Strictly format like the STYLE blogs.
     - Use OUR BLOGS as your factual base**.
+    - No overly dramatic titles or poetic intros. Avoid phrases like “In the realm of…” or “capture hearts and minds.”
+    - Avoid metaphors, exaggerated analogies, overused marketing phrases, or casual/slang phrases (e.g. “Hey there,” “Catch you on the flip side,” etc.).
+    - Start with a strong, clear lead—no snarky intros or vague warmups.
+    - Keep paragraphs tight and to the point.
+    - Avoid sounding like a generic marketing article or AI-generated fluff.
     - Clear, concise, and impactful. Avoid verbosity and unnecessary length.
     - No emojis, no casual phrases, and no overly conversational expressions.
     - Write like a professional, not a casual influencer. Tone should be bold and direct—not snarky or overly casual.
-    - Absolutely no metaphors, analogies, or overused marketing phrases.
     - No unnecessary fluff, no drawn-out intros—get to the point fast.
     - **No metaphors, no poetic phrasing, no dramatic sign-offs.** Stay sharp, practical, and precise.
     - **Avoid casual or overly conversational phrases and AI buzzwords** (e.g., “Hey there,” “Catch you on the flip side,” “Let’s face it,” etc.)
@@ -77,6 +81,7 @@ def search_and_generate_response(user_query, k=5):
     What matters most:
     - Sharp structure, expert voice, and clear argumentation.
     - Use OUR BLOGS for core insights and facts.
+    - strictly follow the STYLE BLOGS for tone and style.
     - Mirror STYLE BLOGS in how content is organized, phrased, and delivered.
 
     Strictly avoid:
