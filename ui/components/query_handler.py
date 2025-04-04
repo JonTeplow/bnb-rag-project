@@ -64,7 +64,6 @@ def search_and_generate_response(user_query, k=5):
     - Follow the **exact formatting style** of STYLE BLOGS.
     - Start strong. Get to the point immediately—no warmups or vague intros.
     - Break down ideas into **clean, scannable sections** with clear headers and smooth transitions.
-    - Each response must begin with a **rewritten, punchy title** that reflects the STYLE blog tone.
     
     STYLE GUIDELINES
     - Tone: use the tone of the STYLE BLOGS **Confident, editorial, and modern**.
