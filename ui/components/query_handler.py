@@ -61,7 +61,7 @@ def search_and_generate_response(user_query, k=5):
     Your writing MUST follow these updated rules:
     
     STRUCTURE & TONE
-    - Follow the **exact formatting style** of STYLE BLOGS.
+    - Follow the **exact formatting style** of STYLE BLOGS {style_context}.
     - Start strong. Get to the point immediately—no warmups or vague intros.
     - Avoid metaphors, exaggerated analogies, overused marketing phrases.
     - Start with a strong, clear lead—no snarky intros or vague warmups.
