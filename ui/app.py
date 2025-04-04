@@ -20,7 +20,7 @@ page = st.sidebar.radio("Choose a section:", [
 
 # Main: Query Assistant
 if page == "💬 Query Assistant":
-    st.title("💬 Ask the RAG Assistant")
+    st.title("💬 Ask BNBGPT")
     st.markdown("Use this assistant to generate content based on your BnB blogs, brand voice, and style inspiration.")
 
     user_query = st.text_input("Ask a question:", placeholder="e.g., How can we improve B2B video marketing?")
